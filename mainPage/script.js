@@ -46,7 +46,19 @@ modal03.modalImgId = modalImg3
 modal03.captionTextId = captionText3
 modal03.click()
 
-let span1 = document.getElementsByClassName("close")[0]
+let modal4 = document.getElementById("myModal4")
+let img4 = document.getElementById("myImg4")
+let modalImg4 = document.getElementById("img04")
+let captionText4 = document.getElementById("caption4")
+
+let modal04 = new Modal()
+modal04.modalId = modal4
+modal04.imgId = img4
+modal04.modalImgId = modalImg4
+modal04.captionTextId = captionText4
+modal04.click()
+
+let span1 = document.getElementsByClassName("close1")[0]
 span1.onclick = function () {
   modal1.style.display = "none"
 }
@@ -59,4 +71,9 @@ span2.onclick = function () {
 let span3 = document.getElementsByClassName("close3")[0]
 span3.onclick = function () {
   modal3.style.display = "none"
+}
+
+let span4 = document.getElementsByClassName("close4")[0]
+span4.onclick = function () {
+  modal4.style.display = "none"
 }
